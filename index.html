@@ -24,7 +24,7 @@ function httpGetAsync(theUrl, callback)
     xmlHttp.send(null);
 }
 
-httpGetAsync("https://"+prompt()), function(text) {
+httpGetAsync("https://"+prompt(), function(text) {
  document.body.innerHTML = text;
  setTimeout(function(){document.body.innerText=document.body.innerHTML},20)
 }
